@@ -23,8 +23,13 @@ filterTracksDir=../../teunTrackingCode/filterTracks2Dt/src
 ### 20180213-Surface:
 #ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-150927-AsImageSequences
 #ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-151805-AsImageSequences
-ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-152022-AsImageSequences
+#ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-152022-AsImageSequences
 #ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-154132-AsImageSequences
+
+
+### 20180227-Surface:
+#ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180227/20180227SurfaceVid1-25fpsx20Mag2000Frames/DDMmovies180227-143931-AsImageSequences
+ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180227/20180227SurfaceVid2-25fpsx20Mag2000Frames/DDMmovies180227-155825-AsImageSequences
 
 ### 20180202-DDM
 #ImageDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180202/20170202DDMx20-50fps/DDMmovies180202-135326-AsImageSequences
@@ -92,10 +97,10 @@ do
 
 	# x20 Magnification at Glass Surface.
         echo "FINDRODS 1" >> $inFile
-        echo "MINVAL 0.05" >> $inFile
-        echo "DIAMETER 2.8" >> $inFile
+        echo "MINVAL 0.001" >> $inFile
+        echo "DIAMETER 4.0" >> $inFile
         echo "BLURDIAMETER 0.8" >> $inFile
-        echo "SUBBACKGROUND 0.2" >> $inFile
+        echo "SUBBACKGROUND 0.3" >> $inFile
         echo "BGTHRESHOLD 0.95" >> $inFile
         echo "DEBUG 1" >> $inFile
         echo "OVERLAPR 0.0" >> $inFile
@@ -159,7 +164,7 @@ do
 	echo "TRACKINPUTFILE $trackRodsOutputFolder/tracks.dat" > $inFilterFile
 	echo "OUTPUTDIR $filterTracksOutputFolder/" >> $inFilterFile
 	echo "DEBUG 1" >> $inFilterFile
-	echo "TT 10.0" >> $inFilterFile
+	echo "TT 5.0" >> $inFilterFile
 	## NB: These values are currently being input manually in filterTracks2Dt.c line 50 and not being read in from here.
 	
 	runFilterTracksFile=${inFilterFile%.*}

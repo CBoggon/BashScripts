@@ -26,7 +26,12 @@ fps=50			# frames per second
 #folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-150927
 #folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-151805
 #folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-152022
-folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-154132
+#folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-154132
+
+## 20180227-Surface:
+fps=25			# frames per second
+#folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180227/20180227SurfaceVid1-25fpsx20Mag2000Frames/DDMmovies180227-143931
+folderDir=../../../../../media/cameron/MyBook/MastersProject/Data/20180227/20180227SurfaceVid2-25fpsx20Mag2000Frames/DDMmovies180227-155825
 
 
 ## 20180202-DDM:

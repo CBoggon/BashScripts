@@ -212,7 +212,8 @@ class produceLabelledImages:
 #Declare Variables
 NumFramesToAverageOver = 1;
 minTrajLen = 30*NumFramesToAverageOver;
-fps = 50;
+#fps = 50;
+fps = 25;
 timePerFrame = 1./fps;
 pixelsToMicrons = 0.702;    # For x20 Mag
 #pixelsToMicrons = 0.354;    # For x40 Mag
@@ -225,12 +226,12 @@ textColour = 0;
 
 ###### UBUNTU ####
 ## TEST FILE:
-#fileDir = '../../../../../../media/cameron/MyBook/MastersProject/Data/DataForTestingTracking/20180213-x20Surface/';
 
 ## Run Files:
 #fileDir = '../../../../../../media/cameron/MyBook/MastersProject/Data/20180206/20180206-50fpsx20-SurfacePhage+ControlMeas3/DDMmovies180206-164041-AsImageSequences/Output-Pos01_Movie0001/';
 #fileDir = '../../../../../../media/cameron/MyBook/MastersProject/Data/20180202/20170202DDMx20-50fps/DDMmovies180202-135326-AsImageSequences/Output-Pos00_Movie0001/';
-fileDir = '../../../../../media/cameron/MyBook/MastersProject/Data/20180213/20180213Surface2Samples-50fpsx20Mag/DDMmovies180213-154132-AsImageSequences/Output-Pos03_Movie0002/';
+fileDir = '../../../../../../media/cameron/MyBook/MastersProject/Data/20180227/20180227SurfaceVid2-25fpsx20Mag2000Frames/DDMmovies180227-155825-AsImageSequences/Output-Pos02_Movie0010/';
+#fileDir = '../../../../../../media/cameron/MyBook/MastersProject/Data/20180227/20180227SurfaceVid1-25fpsx20Mag2000Frames/DDMmovies180227-143931-AsImageSequences/Output-Pos01_Movie0009/';
 
 
 trackFilename = fileDir+'filterTracks2DtOutput/tracks_fixed.dat';
